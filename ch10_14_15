@@ -1,0 +1,17 @@
+int main() {
+
+    //Ex_10.14
+    auto sum = [](int a,int b)->int {return a+b;};
+    cout<<"sum(2,3)="<<sum(2,3)<<endl;
+
+    //Ex_10.15
+    {
+        int x = 3;
+        auto sum2 = [x](int a)->int{
+            return x+a;
+        };
+        cout<<sum2(2)<<endl;
+    }
+
+    return 0;
+}
